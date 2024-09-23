@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "probasketball"
+version = "0.1.0"
+description = ""
+authors = ["art-bug <artbag94@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+asgiref = "3.7.2"
+django = "5.0.1"
+fontawesomefree = "6.5.1"
+python-slugify = "8.0.1"
+pytz = "2023.3.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

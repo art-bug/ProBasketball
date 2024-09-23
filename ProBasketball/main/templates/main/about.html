@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <h1>{{ title }}</h1>
+    <p>Баскетбол - лучшая игра с мячом</p>
+    <a href="{% url 'home' %}" class="btn btn-danger">На главную</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+  <div class="content" xmlns="http://www.w3.org/1999/html">
+  <h1>Создать новость</h1>
+  <form method="post" action="{% url 'article-creation' %}">{% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-success" type="submit">Готово</button>
+  </form>
+  <br>
+  <a href="{% url 'home' %}" class="btn btn-danger">На главную</a>
+  <br>
+{% endblock %}
